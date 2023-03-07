@@ -21,7 +21,7 @@ Helm chart (Kubernetes)
 目的
 ====
 
-| 本書では、Exastro IT Automation を利用する際に必要となる、Exastro Platform および Exastro IT Automation を導入する手順について説明します。
+| 本書では、Exastro IT Automation を利用する際に必要となる、 :index:`Exastro Platform` および Exastro IT Automation を導入する手順について説明します。
 
 前提条件
 ========
@@ -58,7 +58,7 @@ Helm chart (Kubernetes)
 - 通信要件
 
   - クライアントからデプロイ先のコンテナ環境にアクセスできる必要があります。
-  - Platform 管理者用と一般ユーザー用の2つ通信ポートが使用となります。
+  - :index:`Platform 管理者` 用と :index:`一般ユーザー` 用の2つ通信ポートが使用となります。
   - コンテナ環境からコンテナイメージの取得のために、Docker Hub に接続できる必要があります。
 
 - 外部コンポーネント
@@ -77,10 +77,10 @@ Helm chart (Kubernetes)
 Helm リポジトリの登録
 ---------------------
 
-| Exastro システムは、以下の2つのアプリケーションから構成されています。
+| :index:`Exastro システム` は、以下の2つのアプリケーションから構成されています。
 | Exastro の全ツールは同一の Helm リポジトリ上に存在しています。
 
-- 共通基盤 (Exastro Platform)
+- :index:`共通基盤 (Exastro Platform)`
 - Exastro IT Automation
 
 .. csv-table::
@@ -424,14 +424,14 @@ Helm リポジトリの登録
 サービス公開の設定
 ------------------
 
-| Exastro サービスを公開するための代表的な3つの設定方法について紹介します。
+| :index:`Exastro サービス` を公開するための代表的な3つの設定方法について紹介します。
 
 - Ingress
 - LoadBalancer
 - NodePort
 
 .. note:: 
-  | ここで紹介する方法以外にもサービス公開方法はあります。ユーザの環境ごとに適切な構成・設定を選択してください。
+  | ここで紹介する方法以外にもサービス公開方法はあります。ユーザーの環境ごとに適切な構成・設定を選択してください。
 
 パラメータ
 ^^^^^^^^^^
@@ -454,7 +454,7 @@ Helm リポジトリの登録
       - 特徴
 
       | パブリッククラウドなどで Ingress Controller が利用可能な場合、Ingress を使ったサービス公開ができます。
-      | クラスタ内にロードバランサーを構築して、ユーザ自身が運用したい場合などにメリットがあります。
+      | クラスタ内にロードバランサーを構築して、ユーザー自身が運用したい場合などにメリットがあります。
 
       - 設定例
 
@@ -503,7 +503,7 @@ Helm リポジトリの登録
       - 特徴
 
       | パブリッククラウドなどで LoadBalancer が利用可能な場合、LoadBalancer を使ったサービス公開ができます。
-      | Ingress とは異なり、クラスタ外部(多くは、パブリッククラウドのサービス上)にロードバランサーがデプロイされるため、ユーザ自身が運用する必要がないことにメリットがあります。
+      | Ingress とは異なり、クラスタ外部(多くは、パブリッククラウドのサービス上)にロードバランサーがデプロイされるため、ユーザー自身が運用する必要がないことにメリットがあります。
 
       - 設定例
 
@@ -548,7 +548,7 @@ Helm リポジトリの登録
 
       - 特徴
 
-      | ユーザ自身の環境でロードバランサーを準備する、もしくは、検証などの環境では NodePort を使ったサービス公開ができます。
+      | ユーザー自身の環境でロードバランサーを準備する、もしくは、検証などの環境では NodePort を使ったサービス公開ができます。
       | Ingress や LoadBalancer とは異なり、ネイティブな Kubernetes で利用可能です。
 
       - 設定例
@@ -599,7 +599,7 @@ Helm リポジトリの登録
 データベース連携
 ----------------
 
-| Exastro サービスを利用するためには、CMDB やオーガナイゼーションの管理のためのデータベースが必要となります。
+| :index:`Exastro サービス` を利用するためには、CMDB や :index:`オーガナイゼーション` の管理のためのデータベースが必要となります。
 | データベース利用時の3つの設定方法について説明します。
 
 - 外部データベース
@@ -649,12 +649,12 @@ Helm リポジトリの登録
                 secret:
             -     DB_ADMIN_USER: ""
             -     DB_ADMIN_PASSWORD: ""s
-            +     DB_ADMIN_USER: "your-admin-account"      # データベースの管理権限を持つユーザ
-            +     DB_ADMIN_PASSWORD: "your-admin-password" # データベースの管理権限を持つユーザのパスワード
+            +     DB_ADMIN_USER: "your-admin-account"      # データベースの管理権限を持つユーザー
+            +     DB_ADMIN_PASSWORD: "your-admin-password" # データベースの管理権限を持つユーザーのパスワード
                   DB_USER: ""
                   DB_PASSWORD: ""
 
-      2.  Exastro 共通基盤用データベースの設定
+      2.  :index:`Exastro 共通基盤` 用データベースの設定
 
           | データベースの接続情報を設定します。
 
@@ -679,8 +679,8 @@ Helm リポジトリの登録
                 secret:
             -     DB_ADMIN_USER: ""
             -     DB_ADMIN_PASSWORD: ""
-            +     DB_ADMIN_USER: "your-admin-account"      # データベースの管理者ユーザ
-            +     DB_ADMIN_PASSWORD: "your-admin-password" # データベースの管理者ユーザのパスワード
+            +     DB_ADMIN_USER: "your-admin-account"      # データベースの管理者ユーザー
+            +     DB_ADMIN_PASSWORD: "your-admin-password" # データベースの管理者ユーザーのパスワード
                   DB_USER: ""
                   DB_PASSWORD: ""
 
@@ -712,7 +712,7 @@ Helm リポジトリの登録
       | また、データベースのデータを永続化するために利用するストレージを指定します。
 
       .. warning::
-        | :command:`DB_ADMIN_USER` で指定するDBの管理ユーザには、データベースとユーザを作成する権限が必要です。
+        | :command:`DB_ADMIN_USER` で指定するDBの管理ユーザーには、データベースとユーザーを作成する権限が必要です。
       
       .. warning::
         | 認証情報などはすべて平文で問題ありません。(Base64エンコードは不要)
@@ -802,9 +802,9 @@ Helm リポジトリの登録
                   DB_USER: ""
                   DB_PASSWORD: ""
 
-      3.  Exastro 共通基盤用データベースの設定
+      3.  :index:`Exastro 共通基盤` 用データベースの設定
 
-          | Exastro 共通基盤のコンテナがデータベースに接続できるようにするために、「1.  データベースコンテナの設定」で作成した root アカウントのパスワードを設定します。
+          | :index:`Exastro 共通基盤` のコンテナがデータベースに接続できるようにするために、「1.  データベースコンテナの設定」で作成した root アカウントのパスワードを設定します。
 
           .. include:: ../include/helm_option_pfDatabaseDefinition.rst
 
@@ -831,18 +831,18 @@ Helm リポジトリの登録
 
 .. _installation_kubernetes_Keycloak 設定:
 
-アプリケーションの DB ユーザ設定
---------------------------------
+アプリケーションの DB ユーザー設定
+----------------------------------
 
-| Exastro でアプリケーションのために作成する DB ユーザの設定をします。
+| :index:`Exastro` でアプリケーションのために作成する DB ユーザーの設定をします。
 
 設定例
 ^^^^^^
 
-| 下記のアプリケーションが利用・作成する DB ユーザをそれぞれ設定します。
+| 下記のアプリケーションが利用・作成する DB ユーザーをそれぞれ設定します。
 
 - Exastro IT Automation
-- Exastro 共通基盤
+- :index:`Exastro 共通基盤`
 - Keycloak
 
 .. warning::
@@ -850,7 +850,7 @@ Helm リポジトリの登録
 
 1.  Exastro IT Automation 用データベースの設定
 
-    | アプリケーションが利用・作成する DB ユーザを設定します。
+    | アプリケーションが利用・作成する DB ユーザーを設定します。
 
     .. include:: ../include/helm_option_itaDatabaseDefinition.rst
 
@@ -872,13 +872,13 @@ Helm リポジトリの登録
             DB_ADMIN_PASSWORD: ""
       -     DB_USER: ""
       -     DB_PASSWORD: ""
-      +     DB_USER: "ita-db-user"                # Exastro IT Automation のアプリが使うDBユーザ
-      +     DB_PASSWORD: "ita-db-user-password"   # Exastro IT Automation のアプリが使うDBユーザのパスワード
+      +     DB_USER: "ita-db-user"                # Exastro IT Automation のアプリが使うDBユーザー
+      +     DB_PASSWORD: "ita-db-user-password"   # Exastro IT Automation のアプリが使うDBユーザーのパスワード
 
 
 2.  Keycloak 用データベースの設定
 
-    | アプリケーションが利用・作成する DB ユーザを設定します。
+    | アプリケーションが利用・作成する DB ユーザーを設定します。
 
     .. include:: ../include/helm_option_keycloakDefinition.rst
 
@@ -904,13 +904,13 @@ Helm リポジトリの登録
             KEYCLOAK_PASSWORD: ""
       -     KEYCLOAK_DB_USER: ""
       -     KEYCLOAK_DB_PASSWORD: ""
-      +     KEYCLOAK_DB_USER: "keycloak-db-user"               # Keycloak が使うDBユーザ
-      +     KEYCLOAK_DB_PASSWORD: "keycloak-db-user-password"  # Keycloak が使うDBユーザのパスワード
+      +     KEYCLOAK_DB_USER: "keycloak-db-user"               # Keycloak が使うDBユーザー
+      +     KEYCLOAK_DB_PASSWORD: "keycloak-db-user-password"  # Keycloak が使うDBユーザーのパスワード
 
 
 3.  Exastro 共通基盤用データベースの設定
 
-    | アプリケーションが利用・作成する DB ユーザを設定します。
+    | アプリケーションが利用・作成する DB ユーザーを設定します。
 
     .. include:: ../include/helm_option_pfDatabaseDefinition.rst
 
@@ -932,8 +932,8 @@ Helm リポジトリの登録
             DB_ADMIN_PASSWORD: ""
       -     DB_USER: ""
       -     DB_PASSWORD: ""
-      +     DB_USER: "pf-db-user"           # Exastro 共通基盤が使うDBユーザ
-      +     DB_PASSWORD: "pf-db-password"   # Exastro 共通基盤が使うDBユーザのパスワード
+      +     DB_USER: "pf-db-user"           # Exastro 共通基盤が使うDBユーザー
+      +     DB_PASSWORD: "pf-db-password"   # Exastro 共通基盤が使うDBユーザーのパスワード
 
 
 .. _installation_kubernetes_gitlablinkage:
@@ -974,10 +974,10 @@ GitLab 連携設定
 
 .. _create_system_manager:
 
-Exastro システム管理者の作成
-----------------------------
+:index:`Exastro システム管理者` の作成
+---------------------------------------
 
-| Keycloak セットアップ時に Exastro システム管理者の初期ユーザを作成するための情報を設定します。
+| Keycloak セットアップ時に :index:`Exastro システム管理者` の初期ユーザーを作成するための情報を設定します。
 
 .. include:: ../include/helm_option_keycloakDefinition.rst
 
@@ -1001,7 +1001,7 @@ Exastro システム管理者の作成
       secret:
   -     KEYCLOAK_USER: ""
   -     KEYCLOAK_PASSWORD: ""
-  +     KEYCLOAK_USER: "admin"               # Exastro システムの管理者
+  +     KEYCLOAK_USER: "admin"               # Exastro システム管理者
   +     KEYCLOAK_PASSWORD: "admin-password"  # Exastro システムの管理者のパスワード
         KEYCLOAK_DB_USER: ""
         KEYCLOAK_DB_PASSWORD: ""

@@ -30,11 +30,11 @@ Ansible Automation Platform
 | Ansible Automation Controller は、Ansible 実行における拡張された機能の利用や、可用性を高めた構成で運用することが可能です。
 
 .. warning:: 
-   | ITA システムおよび Ansible Core とは個別の専用サーバを用意する必要があります。
+   | :index:`ITA システム` および Ansible Core とは個別の専用サーバを用意する必要があります。
    | また実行する Playbook を Ansible Vault で暗号化するため、Ansible Core (Ansible driver (Agent)) が必要となります。
 
 | 以下に主な Ansible driver 機能利用の構成パターンと構成イメージを記載します。
-| ※ITA システムは省略した構成図を記載します。
+| ※ :index:`ITA システム` は省略した構成図を記載します。
 
 
 .. list-table:: システム構成パターン
@@ -83,18 +83,18 @@ Ansible Automation Platform
              | [ポート番号　※2] 
            - 主な用途
          * - ①
-           - ITAシステム
+           - :index:`ITAシステム`
            - Hybrid ノード
            - | http(s)
              | [80(443)/tcp]
            - Ansible Automation Platform 制御通信
          * - ②
-           - ITAシステム
+           - :index:`ITAシステム`
            - Hybrid ノード
            - ssh [22/tcp]
            - Ansible Automation Platform 作業実行用通信
          * - ③
-           - ITAシステム
+           - :index:`ITAシステム`
            - Git
            - | http(s)
              | [80(443)/tcp]
@@ -139,18 +139,18 @@ Ansible Automation Platform
              | [ポート番号　※2] 
            - 主な用途
          * - ①
-           - ITAシステム
+           - :index:`ITAシステム`
            - Controle ノード
            - | http(s)
              | [80(443)/tcp]
            - Ansible Automation Platform 制御通信
          * - ②
-           - ITAシステム
+           - :index:`ITAシステム`
            - Controle ノード
            - ssh [22/tcp]
            - Ansible Automation Platform 作業実行用通信
          * - ③
-           - ITAシステム
+           - :index:`ITAシステム`
            - Git
            - | http(s)
              | [80(443)/tcp]
@@ -177,7 +177,7 @@ Ansible Automation Platform
 システム要件
 ============
 
-| Ansible driver はITAシステムのシステム要件に準拠するため、 :doc:`../../installation/helm_on_kubernetes` を参照してください。
+| Ansible driver は :index:`ITAシステム` のシステム要件に準拠するため、 :doc:`../../installation/helm_on_kubernetes` を参照してください。
 | ここでは Ansible Automation Platform の要件を記載します。
 
 ..  include:: ../../include/aap_versions.rst
@@ -329,7 +329,7 @@ Organization 追加時の作業
 組織作成
 --------
 
-| Organization 用の組織を作成します。
+| :index:`Organization` 用の組織を作成します。
 | Ansible Automation Platform は admin(管理ユーザー) でログインしてください。
 |
 
@@ -360,7 +360,7 @@ Organization 追加時の作業
 --------------------
 
 | 接続トークン払出用のアプリケーション登録をします。
-| Ansible Automation Platform は admin(管理ユーザー)でログインしてください。
+| Ansible Automation Platform は :index:`admin(管理ユーザー)` でログインしてください。
 |
 
 #. | :menuselection:`管理 --> アプリケーション` の :guilabel:`追加` ボタンをクリックしてください。
@@ -394,8 +394,8 @@ Organization 追加時の作業
 ユーザー作成
 ------------
 
-| Organization 用のユーザーを作成します。
-| Ansible Automation Platform は admin(管理ユーザー)でログインしてください。
+| :index:`Organization` 用のユーザーを作成します。
+| Ansible Automation Platform は :index:`admin(管理ユーザー)` でログインしてください。
 |
 
 #. | :menuselection:`アクセス --> ユーザー` の :guilabel:`追加` ボタンをクリックしてください。
@@ -433,8 +433,8 @@ Organization 追加時の作業
 ロール設定
 ----------
 
-| Organization 用ユーザーに紐づける組織に対してロールを設定します。
-| Ansible Automation Platform は admin(管理ユーザー)でログインしてください。
+| :index:`Organization` 用ユーザーに紐づける組織に対してロールを設定します。
+| Ansible Automation Platform は :index:`admin(管理ユーザー)`でログインしてください。
 |
 
 #. | :menuselection:`アクセス --> ユーザー` より「 :ref:`platform_architecture_user` 」で作成したユーザー名をクリックしてください。
@@ -533,7 +533,7 @@ Organization 追加時の作業
 ----------------------------------
 
 | 「 :ref:`platform_make_organization` 」で作成した組織と上記で使用したインスタンスグループを紐づけます。
-| Ansible Automation Platform は admin(管理ユーザー)でログインしてください。
+| Ansible Automation Platform は :index:`admin(管理ユーザー)` でログインしてください。
 |
 
 #. | :menuselection:`アクセス --> 組織` より、「 :ref:`platform_make_organization` 」で作成した組織名をクリックしてください。

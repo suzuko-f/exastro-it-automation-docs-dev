@@ -164,12 +164,12 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#database-setup">1.3.4. データベース連携</a></li>
-<li><a class="reference internal" href="#db">1.3.5. アプリケーションの DB ユーザ設定</a><ul>
+<li><a class="reference internal" href="#db">1.3.5. アプリケーションの DB ユーザー設定</a><ul>
 <li><a class="reference internal" href="#id9">設定例</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#gitlab">1.3.6. GitLab 連携設定</a></li>
-<li><a class="reference internal" href="#exastro">1.3.7. Exastro システム管理者の作成</a></li>
+<li><a class="reference internal" href="#exastro">1.3.7. Exastro システム管理者 の作成</a></li>
 <li><a class="reference internal" href="#persistent-volume">1.3.8. 永続ボリュームの設定</a></li>
 </ul>
 </li>
@@ -220,7 +220,7 @@ $(window).on('load', function () {
 <section id="id1">
 <h2><span class="section-number">1.1. </span>目的<a class="headerlink" href="#id1" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
-<div class="line">本書では、Exastro IT Automation を利用する際に必要となる、Exastro Platform および Exastro IT Automation を導入する手順について説明します。</div>
+<div class="line">本書では、Exastro IT Automation を利用する際に必要となる、 <span class="target" id="index-0"></span>Exastro Platform および Exastro IT Automation を導入する手順について説明します。</div>
 </div>
 </section>
 <section id="id2">
@@ -293,7 +293,7 @@ $(window).on('load', function () {
 <li><p>通信要件</p>
 <ul class="simple">
 <li><p>クライアントからデプロイ先のコンテナ環境にアクセスできる必要があります。</p></li>
-<li><p>Platform 管理者用と一般ユーザー用の2つ通信ポートが使用となります。</p></li>
+<li><p><span class="target" id="index-1"></span>Platform 管理者 用と <span class="target" id="index-2"></span>一般ユーザー 用の2つ通信ポートが使用となります。</p></li>
 <li><p>コンテナ環境からコンテナイメージの取得のために、Docker Hub に接続できる必要があります。</p></li>
 </ul>
 </li>
@@ -317,11 +317,11 @@ $(window).on('load', function () {
 <section id="helm">
 <h3><span class="section-number">1.3.1. </span>Helm リポジトリの登録<a class="headerlink" href="#helm" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
-<div class="line">Exastro システムは、以下の2つのアプリケーションから構成されています。</div>
+<div class="line"><span class="target" id="index-3"></span>Exastro システム は、以下の2つのアプリケーションから構成されています。</div>
 <div class="line">Exastro の全ツールは同一の Helm リポジトリ上に存在しています。</div>
 </div>
 <ul class="simple">
-<li><p>共通基盤 (Exastro Platform)</p></li>
+<li><p><span class="target" id="index-4"></span>共通基盤 (Exastro Platform)</p></li>
 <li><p>Exastro IT Automation</p></li>
 </ul>
 <table class="docutils align-default">
@@ -664,7 +664,7 @@ $(window).on('load', function () {
 <section id="service-setting">
 <span id="id5"></span><h3><span class="section-number">1.3.3. </span>サービス公開の設定<a class="headerlink" href="#service-setting" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
-<div class="line">Exastro サービスを公開するための代表的な3つの設定方法について紹介します。</div>
+<div class="line"><span class="target" id="index-5"></span>Exastro サービス を公開するための代表的な3つの設定方法について紹介します。</div>
 </div>
 <ul class="simple">
 <li><p>Ingress</p></li>
@@ -674,7 +674,7 @@ $(window).on('load', function () {
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <div class="line-block">
-<div class="line">ここで紹介する方法以外にもサービス公開方法はあります。ユーザの環境ごとに適切な構成・設定を選択してください。</div>
+<div class="line">ここで紹介する方法以外にもサービス公開方法はあります。ユーザーの環境ごとに適切な構成・設定を選択してください。</div>
 </div>
 </div>
 <section id="id6">
@@ -831,7 +831,7 @@ $(window).on('load', function () {
 </ul>
 <div class="line-block">
 <div class="line">パブリッククラウドなどで Ingress Controller が利用可能な場合、Ingress を使ったサービス公開ができます。</div>
-<div class="line">クラスタ内にロードバランサーを構築して、ユーザ自身が運用したい場合などにメリットがあります。</div>
+<div class="line">クラスタ内にロードバランサーを構築して、ユーザー自身が運用したい場合などにメリットがあります。</div>
 </div>
 <ul class="simple">
 <li><p>設定例</p></li>
@@ -881,7 +881,7 @@ $(window).on('load', function () {
 </ul>
 <div class="line-block">
 <div class="line">パブリッククラウドなどで LoadBalancer が利用可能な場合、LoadBalancer を使ったサービス公開ができます。</div>
-<div class="line">Ingress とは異なり、クラスタ外部(多くは、パブリッククラウドのサービス上)にロードバランサーがデプロイされるため、ユーザ自身が運用する必要がないことにメリットがあります。</div>
+<div class="line">Ingress とは異なり、クラスタ外部(多くは、パブリッククラウドのサービス上)にロードバランサーがデプロイされるため、ユーザー自身が運用する必要がないことにメリットがあります。</div>
 </div>
 <ul class="simple">
 <li><p>設定例</p></li>
@@ -927,7 +927,7 @@ $(window).on('load', function () {
 <li><p>特徴</p></li>
 </ul>
 <div class="line-block">
-<div class="line">ユーザ自身の環境でロードバランサーを準備する、もしくは、検証などの環境では NodePort を使ったサービス公開ができます。</div>
+<div class="line">ユーザー自身の環境でロードバランサーを準備する、もしくは、検証などの環境では NodePort を使ったサービス公開ができます。</div>
 <div class="line">Ingress や LoadBalancer とは異なり、ネイティブな Kubernetes で利用可能です。</div>
 </div>
 <ul class="simple">
@@ -980,7 +980,7 @@ $(window).on('load', function () {
 <section id="database-setup">
 <span id="id8"></span><h3><span class="section-number">1.3.4. </span>データベース連携<a class="headerlink" href="#database-setup" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
-<div class="line">Exastro サービスを利用するためには、CMDB やオーガナイゼーションの管理のためのデータベースが必要となります。</div>
+<div class="line"><span class="target" id="index-6"></span>Exastro サービス を利用するためには、CMDB や <span class="target" id="index-7"></span>オーガナイゼーション の管理のためのデータベースが必要となります。</div>
 <div class="line">データベース利用時の3つの設定方法について説明します。</div>
 </div>
 <ul class="simple">
@@ -1115,15 +1115,15 @@ $(window).on('load', function () {
 <span class="linenos">50</span><span class="w"> </span>   secret:
 <span class="linenos">51</span><span class="gd">-     DB_ADMIN_USER: &quot;&quot;</span>
 <span class="linenos">52</span><span class="gd">-     DB_ADMIN_PASSWORD: &quot;&quot;s</span>
-<span class="linenos">53</span><span class="gi">+     DB_ADMIN_USER: &quot;your-admin-account&quot;      # データベースの管理権限を持つユーザ</span>
-<span class="linenos">54</span><span class="gi">+     DB_ADMIN_PASSWORD: &quot;your-admin-password&quot; # データベースの管理権限を持つユーザのパスワード</span>
+<span class="linenos">53</span><span class="gi">+     DB_ADMIN_USER: &quot;your-admin-account&quot;      # データベースの管理権限を持つユーザー</span>
+<span class="linenos">54</span><span class="gi">+     DB_ADMIN_PASSWORD: &quot;your-admin-password&quot; # データベースの管理権限を持つユーザーのパスワード</span>
 <span class="linenos">55</span><span class="w"> </span>     DB_USER: &quot;&quot;
 <span class="linenos">56</span><span class="w"> </span>     DB_PASSWORD: &quot;&quot;
 </pre></div>
 </div>
 </div>
 </li>
-<li><p>Exastro 共通基盤用データベースの設定</p>
+<li><p><span class="target" id="index-8"></span>Exastro 共通基盤 用データベースの設定</p>
 <div class="line-block">
 <div class="line">データベースの接続情報を設定します。</div>
 </div>
@@ -1224,8 +1224,8 @@ $(window).on('load', function () {
 <span class="linenos">123</span><span class="w"> </span>   secret:
 <span class="linenos">124</span><span class="gd">-     DB_ADMIN_USER: &quot;&quot;</span>
 <span class="linenos">125</span><span class="gd">-     DB_ADMIN_PASSWORD: &quot;&quot;</span>
-<span class="linenos">126</span><span class="gi">+     DB_ADMIN_USER: &quot;your-admin-account&quot;      # データベースの管理者ユーザ</span>
-<span class="linenos">127</span><span class="gi">+     DB_ADMIN_PASSWORD: &quot;your-admin-password&quot; # データベースの管理者ユーザのパスワード</span>
+<span class="linenos">126</span><span class="gi">+     DB_ADMIN_USER: &quot;your-admin-account&quot;      # データベースの管理者ユーザー</span>
+<span class="linenos">127</span><span class="gi">+     DB_ADMIN_PASSWORD: &quot;your-admin-password&quot; # データベースの管理者ユーザーのパスワード</span>
 <span class="linenos">128</span><span class="w"> </span>     DB_USER: &quot;&quot;
 <span class="linenos">129</span><span class="w"> </span>     DB_PASSWORD: &quot;&quot;
 </pre></div>
@@ -1342,7 +1342,7 @@ $(window).on('load', function () {
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <div class="line-block">
-<div class="line"><strong class="command">DB_ADMIN_USER</strong> で指定するDBの管理ユーザには、データベースとユーザを作成する権限が必要です。</div>
+<div class="line"><strong class="command">DB_ADMIN_USER</strong> で指定するDBの管理ユーザーには、データベースとユーザーを作成する権限が必要です。</div>
 </div>
 </div>
 <div class="admonition warning">
@@ -1586,9 +1586,9 @@ $(window).on('load', function () {
 </div>
 </div>
 </li>
-<li><p>Exastro 共通基盤用データベースの設定</p>
+<li><p><span class="target" id="index-9"></span>Exastro 共通基盤 用データベースの設定</p>
 <div class="line-block">
-<div class="line">Exastro 共通基盤のコンテナがデータベースに接続できるようにするために、「1.  データベースコンテナの設定」で作成した root アカウントのパスワードを設定します。</div>
+<div class="line"><span class="target" id="index-10"></span>Exastro 共通基盤 のコンテナがデータベースに接続できるようにするために、「1.  データベースコンテナの設定」で作成した root アカウントのパスワードを設定します。</div>
 </div>
 <table class="filter-table docutils align-left" id="id37">
 <caption><span class="caption-number">表 1.11 </span><span class="caption-text">共通設定 (Exastro 共通基盤用データベース) のオプションパラメータ</span><a class="headerlink" href="#id37" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -1696,18 +1696,18 @@ $(window).on('load', function () {
 </div></div>
 </section>
 <section id="db">
-<span id="installation-kubernetes-keycloak"></span><h3><span class="section-number">1.3.5. </span>アプリケーションの DB ユーザ設定<a class="headerlink" href="#db" title="この見出しへのパーマリンク">¶</a></h3>
+<span id="installation-kubernetes-keycloak"></span><h3><span class="section-number">1.3.5. </span>アプリケーションの DB ユーザー設定<a class="headerlink" href="#db" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
-<div class="line">Exastro でアプリケーションのために作成する DB ユーザの設定をします。</div>
+<div class="line"><span class="target" id="index-11"></span>Exastro でアプリケーションのために作成する DB ユーザーの設定をします。</div>
 </div>
 <section id="id9">
 <h4>設定例<a class="headerlink" href="#id9" title="この見出しへのパーマリンク">¶</a></h4>
 <div class="line-block">
-<div class="line">下記のアプリケーションが利用・作成する DB ユーザをそれぞれ設定します。</div>
+<div class="line">下記のアプリケーションが利用・作成する DB ユーザーをそれぞれ設定します。</div>
 </div>
 <ul class="simple">
 <li><p>Exastro IT Automation</p></li>
-<li><p>Exastro 共通基盤</p></li>
+<li><p><span class="target" id="index-12"></span>Exastro 共通基盤</p></li>
 <li><p>Keycloak</p></li>
 </ul>
 <div class="admonition warning">
@@ -1719,7 +1719,7 @@ $(window).on('load', function () {
 <ol class="arabic">
 <li><p>Exastro IT Automation 用データベースの設定</p>
 <div class="line-block">
-<div class="line">アプリケーションが利用・作成する DB ユーザを設定します。</div>
+<div class="line">アプリケーションが利用・作成する DB ユーザーを設定します。</div>
 </div>
 <table class="filter-table docutils align-left" id="id39">
 <caption><span class="caption-number">表 1.12 </span><span class="caption-text">共通設定 (Exastro IT Automation 用データベース) のオプションパラメータ</span><a class="headerlink" href="#id39" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -1817,15 +1817,15 @@ $(window).on('load', function () {
 <span class="linenos">49</span><span class="w"> </span>     DB_ADMIN_PASSWORD: &quot;&quot;
 <span class="linenos">50</span><span class="gd">-     DB_USER: &quot;&quot;</span>
 <span class="linenos">51</span><span class="gd">-     DB_PASSWORD: &quot;&quot;</span>
-<span class="linenos">52</span><span class="gi">+     DB_USER: &quot;ita-db-user&quot;                # Exastro IT Automation のアプリが使うDBユーザ</span>
-<span class="linenos">53</span><span class="gi">+     DB_PASSWORD: &quot;ita-db-user-password&quot;   # Exastro IT Automation のアプリが使うDBユーザのパスワード</span>
+<span class="linenos">52</span><span class="gi">+     DB_USER: &quot;ita-db-user&quot;                # Exastro IT Automation のアプリが使うDBユーザー</span>
+<span class="linenos">53</span><span class="gi">+     DB_PASSWORD: &quot;ita-db-user-password&quot;   # Exastro IT Automation のアプリが使うDBユーザーのパスワード</span>
 </pre></div>
 </div>
 </div>
 </li>
 <li><p>Keycloak 用データベースの設定</p>
 <div class="line-block">
-<div class="line">アプリケーションが利用・作成する DB ユーザを設定します。</div>
+<div class="line">アプリケーションが利用・作成する DB ユーザーを設定します。</div>
 </div>
 <table class="filter-table docutils align-left" id="id41">
 <caption><span class="caption-number">表 1.13 </span><span class="caption-text">共通設定 (Keycloak) のオプションパラメータ</span><a class="headerlink" href="#id41" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -1942,15 +1942,15 @@ $(window).on('load', function () {
 <span class="linenos"> 96</span><span class="w"> </span>     KEYCLOAK_PASSWORD: &quot;&quot;
 <span class="linenos"> 97</span><span class="gd">-     KEYCLOAK_DB_USER: &quot;&quot;</span>
 <span class="linenos"> 98</span><span class="gd">-     KEYCLOAK_DB_PASSWORD: &quot;&quot;</span>
-<span class="linenos"> 99</span><span class="gi">+     KEYCLOAK_DB_USER: &quot;keycloak-db-user&quot;               # Keycloak が使うDBユーザ</span>
-<span class="linenos">100</span><span class="gi">+     KEYCLOAK_DB_PASSWORD: &quot;keycloak-db-user-password&quot;  # Keycloak が使うDBユーザのパスワード</span>
+<span class="linenos"> 99</span><span class="gi">+     KEYCLOAK_DB_USER: &quot;keycloak-db-user&quot;               # Keycloak が使うDBユーザー</span>
+<span class="linenos">100</span><span class="gi">+     KEYCLOAK_DB_PASSWORD: &quot;keycloak-db-user-password&quot;  # Keycloak が使うDBユーザーのパスワード</span>
 </pre></div>
 </div>
 </div>
 </li>
 <li><p>Exastro 共通基盤用データベースの設定</p>
 <div class="line-block">
-<div class="line">アプリケーションが利用・作成する DB ユーザを設定します。</div>
+<div class="line">アプリケーションが利用・作成する DB ユーザーを設定します。</div>
 </div>
 <table class="filter-table docutils align-left" id="id43">
 <caption><span class="caption-number">表 1.14 </span><span class="caption-text">共通設定 (Exastro 共通基盤用データベース) のオプションパラメータ</span><a class="headerlink" href="#id43" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -2048,8 +2048,8 @@ $(window).on('load', function () {
 <span class="linenos">122</span><span class="w"> </span>     DB_ADMIN_PASSWORD: &quot;&quot;
 <span class="linenos">123</span><span class="gd">-     DB_USER: &quot;&quot;</span>
 <span class="linenos">124</span><span class="gd">-     DB_PASSWORD: &quot;&quot;</span>
-<span class="linenos">125</span><span class="gi">+     DB_USER: &quot;pf-db-user&quot;           # Exastro 共通基盤が使うDBユーザ</span>
-<span class="linenos">126</span><span class="gi">+     DB_PASSWORD: &quot;pf-db-password&quot;   # Exastro 共通基盤が使うDBユーザのパスワード</span>
+<span class="linenos">125</span><span class="gi">+     DB_USER: &quot;pf-db-user&quot;           # Exastro 共通基盤が使うDBユーザー</span>
+<span class="linenos">126</span><span class="gi">+     DB_PASSWORD: &quot;pf-db-password&quot;   # Exastro 共通基盤が使うDBユーザーのパスワード</span>
 </pre></div>
 </div>
 </div>
@@ -2142,9 +2142,9 @@ $(window).on('load', function () {
 </div>
 </section>
 <section id="exastro">
-<span id="create-system-manager"></span><h3><span class="section-number">1.3.7. </span>Exastro システム管理者の作成<a class="headerlink" href="#exastro" title="この見出しへのパーマリンク">¶</a></h3>
+<span id="create-system-manager"></span><h3><span class="section-number">1.3.7. </span><span class="target" id="index-13"></span>Exastro システム管理者 の作成<a class="headerlink" href="#exastro" title="この見出しへのパーマリンク">¶</a></h3>
 <div class="line-block">
-<div class="line">Keycloak セットアップ時に Exastro システム管理者の初期ユーザを作成するための情報を設定します。</div>
+<div class="line">Keycloak セットアップ時に <span class="target" id="index-14"></span>Exastro システム管理者 の初期ユーザーを作成するための情報を設定します。</div>
 </div>
 <table class="filter-table docutils align-left" id="id47">
 <caption><span class="caption-number">表 1.16 </span><span class="caption-text">共通設定 (Keycloak) のオプションパラメータ</span><a class="headerlink" href="#id47" title="このテーブルへのパーマリンク">¶</a></caption>
@@ -2259,7 +2259,7 @@ $(window).on('load', function () {
 <span class="linenos"> 94</span><span class="w"> </span>   secret:
 <span class="linenos"> 95</span><span class="gd">-     KEYCLOAK_USER: &quot;&quot;</span>
 <span class="linenos"> 96</span><span class="gd">-     KEYCLOAK_PASSWORD: &quot;&quot;</span>
-<span class="linenos"> 97</span><span class="gi">+     KEYCLOAK_USER: &quot;admin&quot;               # Exastro システムの管理者</span>
+<span class="linenos"> 97</span><span class="gi">+     KEYCLOAK_USER: &quot;admin&quot;               # Exastro システム管理者</span>
 <span class="linenos"> 98</span><span class="gi">+     KEYCLOAK_PASSWORD: &quot;admin-password&quot;  # Exastro システムの管理者のパスワード</span>
 <span class="linenos"> 99</span><span class="w"> </span>     KEYCLOAK_DB_USER: &quot;&quot;
 <span class="linenos">100</span><span class="w"> </span>     KEYCLOAK_DB_PASSWORD: &quot;&quot;
@@ -3036,7 +3036,7 @@ http://172.16.20.xxx:30080
 <a class="reference internal image-reference" href="../../../_images/administrator-console.png"><img alt="administrator-console" src="../../../_images/administrator-console.png" style="width: 600px;" /></a>
 </figure>
 <div class="line-block">
-<div class="line">ログイン ID とパスワードは <a class="reference internal" href="#create-system-manager"><span class="std std-ref">Exastro システム管理者の作成</span></a> で登録した、<kbd class="kbd docutils literal notranslate">KEYCLOAK_USER</kbd> 及び <kbd class="kbd docutils literal notranslate">KEYCLOAK_PASSWORD</kbd> です。</div>
+<div class="line">ログイン ID とパスワードは <a class="reference internal" href="#create-system-manager"><span class="std std-ref">Exastro システム管理者 の作成</span></a> で登録した、<kbd class="kbd docutils literal notranslate">KEYCLOAK_USER</kbd> 及び <kbd class="kbd docutils literal notranslate">KEYCLOAK_PASSWORD</kbd> です。</div>
 </div>
 <figure class="align-default" id="id17">
 <a class="reference internal image-reference" href="../../../_images/exastro-login.png"><img alt="login" src="../../../_images/exastro-login.png" style="width: 300px;" /></a>
