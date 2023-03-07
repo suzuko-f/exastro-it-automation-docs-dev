@@ -36,7 +36,7 @@ Ansible Core
      - 説明
      - Ansibleスケールアウト可否
    * - Ansible Core
-     - Exastro IT Automation システムと Ansible Core を同一環境に構成 
+     - :index:`Exastro IT Automation システム` と Ansible Core を同一環境に構成 
      - ○ (Kubernetes環境に限る)
 
 
@@ -82,7 +82,7 @@ Ansible Core
 システム要件
 ============
 
-| Ansible driver は Exastro IT Automation システムのシステム要件に準拠するため、:doc:`../../installation/helm_on_kubernetes` を参照してください。
+| Ansible driver は :index:`Exastro IT Automation システム` のシステム要件に準拠するため、:doc:`../../installation/helm_on_kubernetes` を参照してください。
 
 
 Playbook連携
