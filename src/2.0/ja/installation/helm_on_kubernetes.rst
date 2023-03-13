@@ -78,10 +78,14 @@ Helm リポジトリの登録
 ---------------------
 
 | :index:`Exastro システム` は、以下の2つのアプリケーションから構成されています。
-| Exastro の全ツールは同一の Helm リポジトリ上に存在しています。
 
-- :index:`共通基盤 (Exastro Platform)`
-- Exastro IT Automation
+.. glossary:: 
+
+- Exastro システム
+   - :index:`共通基盤 (Exastro Platform)`
+   - Exastro IT Automation
+
+| Exastro の全ツールは同一の Helm リポジトリ上に存在しています。
 
 .. csv-table::
  :header: リポジトリ
