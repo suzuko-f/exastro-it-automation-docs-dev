@@ -6,7 +6,7 @@ Ansible Automation Platform
 ========
 
 | Exastro IT Automation（以下、ITAとも記載する）で Ansible 連携機能 (以下、Ansible driver) として運用する為のシステム構成と環境構築について説明します。
-| 本書ではそのうち Ansible Automation Platform を実行エンジンとしたシステム構成と環境構築について説明します。
+| 本書ではそのうち Ansible Automation Platform を 実行エンジン としたシステム構成と環境構築について説明します。
 |
 | Ansible Core による構成を行う場合は、:doc:`./ansible_core` を参照してください。
 | 
@@ -330,7 +330,7 @@ Organization 追加時の作業
 --------
 
 | :index:`Organization` 用の組織を作成します。
-| Ansible Automation Platform は admin(管理ユーザー) でログインしてください。
+| Ansible Automation Platform は :index:`admin(管理ユーザー) ` でログインしてください。
 |
 
 #. | :menuselection:`アクセス --> 組織` の :guilabel:`追加` ボタンをクリックします。
