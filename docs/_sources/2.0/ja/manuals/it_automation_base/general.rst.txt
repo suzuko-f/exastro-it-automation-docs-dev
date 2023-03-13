@@ -43,7 +43,7 @@
       :width: 6.4939in
       :height: 4.56706in
 
-#. | 下記のようにWorkspace管理画面が表示されます。
+#. | 下記のように :index:`Workspace管理画面` が表示されます。
 
    .. image:: /images/ja/diagram/login_workspace.png
       :alt: 初回ログイン

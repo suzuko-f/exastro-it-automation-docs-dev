@@ -25,7 +25,7 @@ Ansible Automation Controllerについて
 
 | Ansible Automation Controllerとは、PF構築自動化ツールであるAnsibleにアクセスコントロール、ジョブスケジューリング、タスクの可視化などの機能を拡張した管理プラットフォームです。
 | “プロジェクト”、”インベントリ”、”認証情報”の組合せで”ジョブテンプレート”を作成しAnsibleを実行できます。
-| 複数の“ジョブテンプレート”を組み合せて”ワークフロージョブテンプレート”を作成することによって、より多彩な作業フローを表現することができます。
+| 複数の“ジョブテンプレート”を組み合せて” :index:`ワークフロー` ジョブテンプレート”を作成することによって、より多彩な :index:`作業フロー` を表現することができます。
 | Ansible Automation Controllerの詳細情報については、Ansible Automation Controllerのマニュアルを参照してください。
 | ITAで対応可能なAnsible Automation Controllerのバージョンは、 :doc:`../../configuration/ansible/ansible_automation_platform` を参照してください。
 | 最新のバージョンに対応した記法は使えないことがありますので、ご注意ください。
